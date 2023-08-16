@@ -7,7 +7,7 @@ import { StatusBar } from 'react-native'
 export const App = () => {
   return (
     <>
-    <StatusBar backgroundColor={"black"} barStyle={'light-content'}></StatusBar>
+    <StatusBar backgroundColor={"black"} barStyle={'dark-content'}></StatusBar>
       <Main></Main>
 
     </>)
