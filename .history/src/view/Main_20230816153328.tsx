@@ -41,7 +41,7 @@ export const Main = () => {
 
                 {/* {FILA DE BOTONES} */}
                 <View style={styles.fila}>
-                    <BotonCalc texto={'0'} ancho={true} ></BotonCalc>
+                    <BotonCalc texto={'0'} ></BotonCalc>
                     <BotonCalc texto={'.'} ></BotonCalc>
                     <BotonCalc texto={'='} color={"#FF9427"}></BotonCalc>
                 </View>
