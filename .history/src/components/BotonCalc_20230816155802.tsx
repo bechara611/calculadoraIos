@@ -5,18 +5,17 @@ interface botonCalcInterface{
     texto:string,
     color?:string,
     ancho?:boolean,
-    accion?:(numeroTexto:string)=>void
 }
-export const BotonCalc = ({texto,color='#2D2D2D',ancho=false,accion=()=>{}}:botonCalcInterface) => {
+export const BotonCalc = ({texto,color='#2D2D2D',ancho=false}:botonCalcInterface) => {
   
     {/* {Boton} */ }
     
 
 
     return(
-        <TouchableOpacity onPress={()=>accion(texto)}>
+        <TouchableOpacity>
 
-    <View  style={
+    <View style={
       {  ...styles.boton, backgroundColor:color,
         width:ancho ? 175: 80
     }
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         justifyContent: 'center',
         marginHorizontal:4,
-        
+        borderWidth:100
     },
     botonTexto: {
         textAlign: 'center',

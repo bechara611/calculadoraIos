@@ -5,18 +5,18 @@ interface botonCalcInterface{
     texto:string,
     color?:string,
     ancho?:boolean,
-    accion?:(numeroTexto:string)=>void
+    action?:Function
 }
-export const BotonCalc = ({texto,color='#2D2D2D',ancho=false,accion=()=>{}}:botonCalcInterface) => {
+export const BotonCalc = ({texto,color='#2D2D2D',ancho=false}:botonCalcInterface) => {
   
     {/* {Boton} */ }
     
 
 
     return(
-        <TouchableOpacity onPress={()=>accion(texto)}>
+        <TouchableOpacity>
 
-    <View  style={
+    <View style={
       {  ...styles.boton, backgroundColor:color,
         width:ancho ? 175: 80
     }
