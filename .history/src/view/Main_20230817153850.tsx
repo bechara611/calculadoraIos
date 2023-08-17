@@ -2,13 +2,12 @@ import React, { useRef, useState } from 'react'
 import { Text, View } from 'react-native'
 import { styles } from '../theme/AppTheme'
 import { BotonCalc } from '../components/BotonCalc'
-import { useCalculadora } from '../hooks/useCalculadora'
 
 
 
 export const Main = () => {
-    const {numero,numeroAnterior,limpiar,armarNumero,positivoNegativo,btnDelete,btnDividir,btnMultiplicar,btnSumar,btnRestar,calcular} = useCalculadora();
-    
+   
+    }
     return (
         <View style={styles.fondo}>
             <View style={styles.calculadoraContainer}>
